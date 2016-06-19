@@ -87,3 +87,9 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+# Idea PyCharm
+.idea/
+
+# original task description
+task.txt
