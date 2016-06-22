@@ -10,7 +10,6 @@ def rewrite(argv):
     with open(argv[1], encoding='utf-8') as file:  # on Windows does not use UTF-8 by default
         input_file = file.read()
 
-    input_file = input_file[:-1]
     letters_dict = {}
     output_string = ""
     output_ids = []
@@ -51,7 +50,7 @@ def rewrite(argv):
                             else:
                                 letters_dict[pant_char.lower()] = deque([[pant_char, counter]])
         # input String can be now rewritten
-        with open('test.output', mode='w', encoding='utf-8') as output_file:
+        with open('out.txt', mode='w', encoding='utf-8') as output_file:
             output_file.writelines([output_string, "\n\n", str(output_ids)])
 
 if __name__ == "__main__":
