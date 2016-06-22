@@ -12,7 +12,7 @@ class KnownValues(unittest.TestCase):
                     ("Li", "Li[1, 2]"),
                     ("lI", "Li[1, 2]"),
                     ("LI", "Li[1, 2]"),
-                    ("jadę na euro!", "jadę na euro![9, 20, 38, 52, 0, 14, 34, 0, 27, 108, 39, 5, 6]"),
+                    ("jadę na euro!", "jadę na euro![9, 20, 38, 52, 0, 14, 34, 0, 27, 110, 39, 5, 6]"),
                     ("Python", "python[118, 12, 3, 604, 5, 14]"),
                     ("ooooo", "oOooo[5, 8, 15, 18, 40]"),
                     ("ABCDEFGH", "abcdeFgh[20, 58, 10, 38, 27, 736, 67, 604]"),

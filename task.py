@@ -21,6 +21,7 @@ def rewrite(argv):
             not_in_dict = True
             l_counter+=1
             if char == " " or char == " ":  # check for empty letter
+                counter += 1
                 output_string += char
                 output_ids.append(0)
             else:
