@@ -7,7 +7,7 @@ def rewrite(argv):
         sys.stderr.write("Not enough arguments! usage: python task.py in.txt pant.txt")
         sys.exit(1)
 
-    with open(argv[1], encoding='utf-8') as file:  # on Windows does not use UTF-8 by default
+    with open(argv[1], encoding='utf-8') as file:  # on Windows python does not use UTF-8 by default
         input_file = file.read()
 
     letters_dict = {}
@@ -51,6 +51,7 @@ def rewrite(argv):
                             else:
                                 letters_dict[pant_char.lower()] = deque([[pant_char, counter]])
         # input String can be now rewritten
+
         with open('out.txt', mode='w', encoding='utf-8') as output_file:
             output_file.writelines([output_string, "\n\n", str(output_ids)])
 
